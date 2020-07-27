@@ -1,0 +1,36 @@
+{
+    "author": "Teo",
+    "manifest_version": 2,
+    "name": "네이버웹툰보기",
+    "short_name": "네보",
+    "description": "네이버 웹툰을 쉽게 볼 수 있는 확장",
+    "version": "0.0.1",
+    "version_name": "preview",
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+       
+    },
+
+    "browser_action": {
+        "default_icon": "webtoon.png",
+        "default_popup": "popup.html"
+        
+    },
+
+    
+
+    "permissions": [
+        "tabs",
+        "storage",
+        "contextMenus",
+        "notifications",
+        "<all_urls>"
+    ],
+    "icons": {
+        "16": "webtoon.png",
+        "48": "webtoon.png",
+        "128": "webtoon.png"
+    }
+}

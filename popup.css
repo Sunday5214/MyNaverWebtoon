@@ -1,0 +1,21 @@
+#divMain {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+
+}
+.divdays{
+    width: 14.285%;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divdays:hover{
+    background-color: #19ce60;
+}
