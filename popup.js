@@ -1,6 +1,6 @@
 
 const weekdays = document.querySelectorAll(".divdays");
-let webtoonLink = "https://comic.naver.com/webtoon/list.nhn?titleId=id&weekday=day";
+let webtoonLink = "https://comic.naver.com/webtoon/list.nhn?titleId=id&weekday=Day";
 
 function GetWebToonData(selectedWeekDay){
     chrome.storage.sync.get(
@@ -16,7 +16,7 @@ function openLinks(weekDay, items){
     items[weekDay].forEach(element=>{
         console.log(element);
         chrome.tabs.create({
-            url: webtoonLink.replace("id", element).replace("day", weekDay)
+            url: webtoonLink.replace("id", element).replace("Day", weekDay)
         })
     })
 }
